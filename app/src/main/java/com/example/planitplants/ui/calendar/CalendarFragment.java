@@ -1,4 +1,4 @@
-package com.example.planitplants.ui.home;
+package com.example.planitplants.ui.calendar;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,22 +8,20 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
-import com.example.planitplants.databinding.FragmentHomeBinding;
 
-public class HomeFragment extends Fragment {
+import com.example.planitplants.databinding.FragmentCalendarBinding;
 
-private FragmentHomeBinding binding;
+public class CalendarFragment extends Fragment {
+
+private FragmentCalendarBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
             ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        CalendarViewModel calendarViewModel =
+                new ViewModelProvider(this).get(CalendarViewModel.class);
 
-    binding = FragmentHomeBinding.inflate(inflater, container, false);
+    binding = FragmentCalendarBinding.inflate(inflater, container, false);
     View root = binding.getRoot();
-
-        final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">PlanItPlants</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_myplants">MyPlants</string>
+    <string name="title_calendar">Calendar</string>
+    <string name="title_profile">Profile</string>
 </resources>
